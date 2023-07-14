@@ -1,5 +1,5 @@
 # CloudFlare DDNS
-一个基于 CloudFlare api 的 shell 脚本，自动更新 ipv6 的 dns 记录
+一个基于 CloudFlare api 的 shell 脚本，自动更新 dns 的 ipv6 记录
 
 # 开始使用
 ## 前期准备
