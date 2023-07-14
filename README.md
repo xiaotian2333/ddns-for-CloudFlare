@@ -1,14 +1,17 @@
 # CloudFlare DDNS
+
 一个基于 CloudFlare api 的 shell 脚本，自动更新 dns 的 ipv6 记录
 
 # 开始使用
+
 ## 前期准备
+
 - 拥有一个域名并使用 Cloudflare 的 DNS 服务器。
 - 访问 [CloudFlare](https://dash.cloudflare.com/) 获取你的区域 ID
 - 在[此处](https://dash.cloudflare.com/profile/api-tokens)创建一个 `api token` 
 - 下载 `updateIpv6.sh` 并根据注释修改 `zoneId` `recordName` `apiKey` 字段
 
-## 更新 Ipv6 记录
+## 开始使用
 
 运行:
 
@@ -21,6 +24,16 @@ sh ./updateIpv6.sh
 如果不存在此类记录，将创建一个。
 
 如果记录已设置为预期的 ip，则不执行任何操作。
+
+## 宝塔面板
+
+在计划任务里添加 `Shell 脚本` 复制 `updateIpv6.sh` 里的全部类容粘贴进去
+
+名称随意，执行周期改为 `N分钟` ，然后输入 `10` 分钟，点击添加任务
+
+在`任务列表`里执行一遍，没报错就行了
+
+> 报错的话自己看看错哪了，一般只改变量就行
 
 # 注意
 
