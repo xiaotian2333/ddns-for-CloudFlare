@@ -11,7 +11,7 @@
 - 在[此处](https://dash.cloudflare.com/profile/api-tokens)创建一个 `api token` 
 - 下载 `updateIpv6.sh` 并根据注释修改 `zoneId` `recordName` `apiKey` 字段
 
-## 开始使用
+## 通过 SSH
 
 运行:
 
@@ -25,7 +25,7 @@ sh ./updateIpv6.sh
 
 如果记录已设置为预期的 ip，则不执行任何操作。
 
-## 宝塔面板
+## 通过宝塔面板
 
 在计划任务里添加 `Shell 脚本` 复制 `updateIpv6.sh` 里的全部类容粘贴进去
 
